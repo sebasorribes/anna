@@ -1,0 +1,459 @@
+[gd_scene load_steps=61 format=3 uid="uid://chf7jfmbq78gw"]
+
+[ext_resource type="Texture2D" uid="uid://twea51be35iu" path="res://sprite escenario/WhatsApp Image 2023-10-17 at 14.38.31.jpeg" id="1_68aqp"]
+[ext_resource type="Script" path="res://Scripts/ObjetosEscenario/Baul_derecha.gd" id="2_1y8wj"]
+[ext_resource type="Script" path="res://Scripts/ObjetosEscenario/Cama.gd" id="2_421gj"]
+[ext_resource type="PackedScene" uid="uid://bsmg166h52knq" path="res://Scene/player.tscn" id="2_nk10f"]
+[ext_resource type="PackedScene" uid="uid://qjyoxcj2uha7" path="res://Scene/talks.tscn" id="3_6r7fg"]
+[ext_resource type="Script" path="res://Scripts/ObjetosEscenario/Baul_Oeste.gd" id="3_hg72j"]
+[ext_resource type="Script" path="res://Scripts/ObjetosEscenario/Libro_Magia.gd" id="5_oyxkh"]
+[ext_resource type="Script" path="res://Scripts/ObjetosEscenario/Caja_Habitacion_trigo_puerta.gd" id="5_yps50"]
+[ext_resource type="Script" path="res://Scripts/ObjetosEscenario/Mesa_Luz.gd" id="6_rfslj"]
+[ext_resource type="Script" path="res://Scripts/Triggers/Hacia_Comedor.gd" id="9_ma5or"]
+[ext_resource type="Script" path="res://Scripts/Triggers/Hacia_Habitacion.gd" id="10_a37fq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s83up"]
+size = Vector2(395, 354)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_deu5j"]
+size = Vector2(39, 745)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dr8fc"]
+size = Vector2(55, 783)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yw3ib"]
+size = Vector2(369, 177)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y27ia"]
+size = Vector2(744, 80.9999)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbeh7"]
+size = Vector2(173, 254.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igyke"]
+size = Vector2(61.75, 327)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqfsv"]
+size = Vector2(529, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rvv1"]
+size = Vector2(66, 454)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fue5a"]
+size = Vector2(208.855, 147.387)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60uoo"]
+size = Vector2(172.64, 133.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ny3yc"]
+size = Vector2(137.405, 170.775)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eagkm"]
+size = Vector2(165.031, 171.375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bt0ot"]
+size = Vector2(96, 171.375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5cut"]
+size = Vector2(176, 344)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a21mf"]
+size = Vector2(80, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hwc81"]
+size = Vector2(131, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_byr3y"]
+size = Vector2(75, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_be3f0"]
+size = Vector2(131, 180)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tg503"]
+size = Vector2(119, 37.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bo1ai"]
+size = Vector2(54.5, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7xjvo"]
+size = Vector2(124, 96)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ornop"]
+size = Vector2(197, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5dow8"]
+size = Vector2(54, 98)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y34as"]
+size = Vector2(53.5, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_la0pi"]
+size = Vector2(79, 98)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ywej"]
+size = Vector2(110, 117.838)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jml8x"]
+size = Vector2(121, 197)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t50ho"]
+size = Vector2(75, 41.9662)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_itc3k"]
+size = Vector2(88, 115)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8ani"]
+size = Vector2(77, 101.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uc80e"]
+size = Vector2(59.095, 170.715)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d61xk"]
+size = Vector2(109.53, 170.715)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqwe0"]
+size = Vector2(71.8805, 195)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_33yee"]
+size = Vector2(56, 153.31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnoje"]
+size = Vector2(56, 124.655)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qrgyn"]
+size = Vector2(139.19, 58.7575)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tf76w"]
+size = Vector2(72, 174.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mr4qw"]
+size = Vector2(72, 176)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8b7u"]
+size = Vector2(24, 139.155)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bo77y"]
+size = Vector2(144, 107.783)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eiixr"]
+size = Vector2(112, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l52jb"]
+size = Vector2(112, 9.82501)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_10sv8"]
+size = Vector2(48, 145.346)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5fcl"]
+size = Vector2(120, 296)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_poqsb"]
+size = Vector2(63, 152)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1gvtl"]
+size = Vector2(92, 152)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vnm3m"]
+size = Vector2(615.613, 216.432)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hyd1k"]
+size = Vector2(292.134, 292.477)
+
+[node name="Tutorial" type="Node"]
+
+[node name="Escenario" type="Node" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Escenario"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1123.0
+offset_bottom = 485.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.415, 0.555)
+texture = ExtResource("1_68aqp")
+expand_mode = 1
+
+[node name="paredes" type="StaticBody2D" parent="Escenario"]
+scale = Vector2(0.415, 0.555)
+collision_layer = 4
+
+[node name="Pared_esquina_SurOeste" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(197.5, 905)
+shape = SubResource("RectangleShape2D_s83up")
+
+[node name="Pared_Oeste" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(21.5, 373.5)
+shape = SubResource("RectangleShape2D_deu5j")
+
+[node name="Pared_Oeste2" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(1893.5, 508.5)
+shape = SubResource("RectangleShape2D_dr8fc")
+
+[node name="Pared_Sur1" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(584.5, 992.5)
+shape = SubResource("RectangleShape2D_yw3ib")
+
+[node name="Pared_Sur2" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(1143, 1040.5)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_y27ia")
+
+[node name="Pared_Sur3" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(1602, 953.125)
+shape = SubResource("RectangleShape2D_xbeh7")
+
+[node name="Pared_Division_Sur" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(776.125, 740.5)
+shape = SubResource("RectangleShape2D_igyke")
+
+[node name="Pared_Division_Medio" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(1072.5, 602.945)
+shape = SubResource("RectangleShape2D_fqfsv")
+
+[node name="Pared_Division_Norte" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(1304, 341)
+shape = SubResource("RectangleShape2D_3rvv1")
+
+[node name="Pared_Medio_Este" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(1232.43, 713.694)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_fue5a")
+
+[node name="Pared_Medio_Oeste" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(929.68, 706.8)
+shape = SubResource("RectangleShape2D_60uoo")
+
+[node name="Pared_comedor_puertaOeste" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(108.702, 85.3877)
+shape = SubResource("RectangleShape2D_ny3yc")
+
+[node name="Pared_comedor_puertaEste" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(492.516, 85)
+shape = SubResource("RectangleShape2D_eagkm")
+
+[node name="Pared_comedor_puertaEste2" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(696, 85)
+shape = SubResource("RectangleShape2D_bt0ot")
+
+[node name="Pared_comer_trasbanco" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(832, 172)
+shape = SubResource("RectangleShape2D_d5cut")
+
+[node name="Pared_Espejo_Oeste" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(960, 128)
+shape = SubResource("RectangleShape2D_a21mf")
+
+[node name="Pared_Espejo_Este" type="CollisionShape2D" parent="Escenario/paredes"]
+position = Vector2(1232, 117.938)
+shape = SubResource("RectangleShape2D_a21mf")
+
+[node name="Objetos" type="StaticBody2D" parent="Escenario"]
+scale = Vector2(0.415, 0.555)
+collision_layer = 8
+
+[node name="Baul" type="StaticBody2D" parent="Escenario/Objetos"]
+collision_layer = 8
+script = ExtResource("2_1y8wj")
+
+[node name="Baul_collider" type="CollisionShape2D" parent="Escenario/Objetos/Baul"]
+position = Vector2(1798.5, 497)
+shape = SubResource("RectangleShape2D_hwc81")
+
+[node name="Baul_Oeste" type="StaticBody2D" parent="Escenario/Objetos"]
+collision_layer = 8
+script = ExtResource("3_hg72j")
+
+[node name="Baul_shape" type="CollisionShape2D" parent="Escenario/Objetos/Baul_Oeste"]
+position = Vector2(1377.5, 451)
+shape = SubResource("RectangleShape2D_byr3y")
+
+[node name="Cama" type="StaticBody2D" parent="Escenario/Objetos"]
+collision_layer = 8
+script = ExtResource("2_421gj")
+dialog_scene = ExtResource("3_6r7fg")
+
+[node name="Cama_shape" type="CollisionShape2D" parent="Escenario/Objetos/Cama"]
+position = Vector2(1798.5, 395)
+shape = SubResource("RectangleShape2D_be3f0")
+
+[node name="Mesa_Luz" type="StaticBody2D" parent="Escenario/Objetos"]
+collision_layer = 8
+script = ExtResource("6_rfslj")
+
+[node name="Vela" type="CollisionShape2D" parent="Escenario/Objetos/Mesa_Luz"]
+position = Vector2(1673.5, 313.25)
+shape = SubResource("RectangleShape2D_tg503")
+
+[node name="Libro_Magia" type="StaticBody2D" parent="Escenario/Objetos"]
+collision_layer = 8
+script = ExtResource("5_oyxkh")
+
+[node name="Atril_conLibro" type="CollisionShape2D" parent="Escenario/Objetos/Libro_Magia"]
+position = Vector2(1483.25, 396.5)
+shape = SubResource("RectangleShape2D_bo1ai")
+
+[node name="Librero" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1524, 261)
+shape = SubResource("RectangleShape2D_7xjvo")
+
+[node name="Librero_basura" type="CollisionPolygon2D" parent="Escenario/Objetos"]
+polygon = PackedVector2Array(1427, 376, 1448, 358, 1445, 253, 1377, 325)
+
+[node name="Mesa_conVela" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1606.5, 660)
+shape = SubResource("RectangleShape2D_ornop")
+
+[node name="Silla_habitacion_miraSur" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1550, 585)
+shape = SubResource("RectangleShape2D_5dow8")
+
+[node name="Silla_habitacion_miraEste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1480.75, 650)
+shape = SubResource("RectangleShape2D_y34as")
+
+[node name="Silla_habitacion_Cruzada" type="CollisionPolygon2D" parent="Escenario/Objetos"]
+polygon = PackedVector2Array(1689, 616, 1689, 553, 1655, 519, 1654, 557, 1625, 580, 1625, 612, 1659, 635)
+
+[node name="Mesa_habitacion_LateralEste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1825.5, 731)
+shape = SubResource("RectangleShape2D_la0pi")
+
+[node name="ZonaBasura_habitacion" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1744, 1021.08)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_7ywej")
+
+[node name="ZonaBasura2_habitacion2" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1859.5, 981.5)
+shape = SubResource("RectangleShape2D_jml8x")
+
+[node name="Brasero_habitacion_derecha" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1191.5, 795.233)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_t50ho")
+
+[node name="Brasero_habitacion_izquierda" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(949.605, 790.625)
+shape = SubResource("RectangleShape2D_t50ho")
+
+[node name="Caja_Habitacion_trigo_puerta" type="StaticBody2D" parent="Escenario/Objetos"]
+collision_layer = 8
+script = ExtResource("5_yps50")
+
+[node name="Caja_habitacion_cercaPuerta" type="CollisionShape2D" parent="Escenario/Objetos/Caja_Habitacion_trigo_puerta"]
+position = Vector2(941, 936.5)
+shape = SubResource("RectangleShape2D_itc3k")
+
+[node name="CajaBarril_habitacion_cercaPuerta2" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(863.5, 828.25)
+shape = SubResource("RectangleShape2D_o8ani")
+
+[node name="Antorcha_Este" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(379.75, 85.3575)
+shape = SubResource("RectangleShape2D_uc80e")
+
+[node name="Antorcha_Oeste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(208.75, 85.3575)
+shape = SubResource("RectangleShape2D_uc80e")
+
+[node name="Puerta_salida" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(294.315, 85.357)
+shape = SubResource("RectangleShape2D_d61xk")
+
+[node name="Armadura_Noreste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(612.06, 97.5)
+shape = SubResource("RectangleShape2D_iqwe0")
+
+[node name="Armadura_Noroeste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(68, 244.655)
+shape = SubResource("RectangleShape2D_33yee")
+
+[node name="Armadura_Suroeste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(72, 562.128)
+shape = SubResource("RectangleShape2D_cnoje")
+
+[node name="Banco_norte" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(826.405, 373.379)
+shape = SubResource("RectangleShape2D_qrgyn")
+
+[node name="Banco_Este" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(708, 816)
+shape = SubResource("RectangleShape2D_tf76w")
+
+[node name="Banco_Oeste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(431.64, 816)
+shape = SubResource("RectangleShape2D_mr4qw")
+
+[node name="Vela_Larga_Oeste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1012, 133.577)
+shape = SubResource("RectangleShape2D_r8b7u")
+
+[node name="Vela_Larga_Este" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1180, 133.577)
+shape = SubResource("RectangleShape2D_r8b7u")
+
+[node name="Espejo" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1096, 117.891)
+shape = SubResource("RectangleShape2D_bo77y")
+
+[node name="Baranda_Norte" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1168, 376.8)
+scale = Vector2(1, 0.22)
+shape = SubResource("RectangleShape2D_eiixr")
+
+[node name="Baranda_Sur" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1168, 492.913)
+shape = SubResource("RectangleShape2D_l52jb")
+
+[node name="Baranda_Este" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1248, 424.673)
+shape = SubResource("RectangleShape2D_10sv8")
+
+[node name="Gran_Mesa_Centro" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(376, 460)
+shape = SubResource("RectangleShape2D_l5fcl")
+
+[node name="Gran_Mesa_Izquierda" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(280.5, 468)
+shape = SubResource("RectangleShape2D_poqsb")
+
+[node name="Gran_Mesa_Derecha" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(482, 468)
+shape = SubResource("RectangleShape2D_1gvtl")
+
+[node name="triggers_and_Spawn" type="StaticBody2D" parent="Escenario"]
+scale = Vector2(0.415, 0.555)
+collision_layer = 8
+
+[node name="Hacia_Comedor" type="StaticBody2D" parent="Escenario/triggers_and_Spawn"]
+scale = Vector2(0.415, 0.555)
+collision_layer = 8
+script = ExtResource("9_ma5or")
+
+[node name="Collider" type="CollisionShape2D" parent="Escenario/triggers_and_Spawn/Hacia_Comedor"]
+position = Vector2(2578.02, 1303.47)
+scale = Vector2(0.415, 0.555)
+shape = SubResource("RectangleShape2D_vnm3m")
+
+[node name="Hacia_Habitacion" type="StaticBody2D" parent="Escenario/triggers_and_Spawn"]
+scale = Vector2(0.415, 0.555)
+collision_layer = 8
+script = ExtResource("10_a37fq")
+
+[node name="Collider" type="CollisionShape2D" parent="Escenario/triggers_and_Spawn/Hacia_Habitacion"]
+position = Vector2(2882.51, 795.39)
+scale = Vector2(0.415, 0.555)
+shape = SubResource("RectangleShape2D_hyd1k")
+
+[node name="Player" parent="." instance=ExtResource("2_nk10f")]
+position = Vector2(687, 257)
+scale = Vector2(0.582, 0.779)
+
+[node name="Talks" parent="." instance=ExtResource("3_6r7fg")]
+visible = false
+offset_left = -180.0
+offset_top = -123.0
+offset_right = 182.0
+offset_bottom = -33.0

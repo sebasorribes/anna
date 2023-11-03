@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=3 uid="uid://biw4y3ksk0km6"]
+
+[ext_resource type="FontFile" uid="uid://cfat3mip662vj" path="res://fonts/Witch Magic.otf" id="1_b14ek"]
+[ext_resource type="Script" path="res://Scripts/pause.gd" id="1_p837q"]
+
+[sub_resource type="FontVariation" id="FontVariation_luh8d"]
+base_font = ExtResource("1_b14ek")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1h3q"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1nws4"]
+bg_color = Color(0.960784, 0.960784, 0.960784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2w7l"]
+bg_color = Color(0.917647, 0.917647, 0.917647, 1)
+
+[node name="Pause" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p837q")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 512.0
+offset_top = 192.0
+offset_right = -534.0
+offset_bottom = -194.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.305882)
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.492
+anchor_top = 1.0
+anchor_right = 0.492
+anchor_bottom = 1.0
+offset_left = -88.072
+offset_top = -480.0
+offset_right = 87.928
+offset_bottom = -416.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_luh8d")
+theme_override_styles/normal = SubResource("StyleBoxFlat_c1h3q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1nws4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l2w7l")
+text = "Reaundar"
+
+[node name="Menu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.492
+anchor_top = 1.0
+anchor_right = 0.492
+anchor_bottom = 1.0
+offset_left = -88.072
+offset_top = -352.0
+offset_right = 87.928
+offset_bottom = -288.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_luh8d")
+theme_override_styles/normal = SubResource("StyleBoxFlat_c1h3q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1nws4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l2w7l")
+text = "Menu"
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

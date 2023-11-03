@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://bitud2ox7ignk"]
+
+[ext_resource type="PackedScene" uid="uid://b2lron2rc7xj5" path="res://Scene/guard.tscn" id="1_mnqfn"]
+[ext_resource type="PackedScene" uid="uid://bsmg166h52knq" path="res://Scene/player.tscn" id="2_1fi01"]
+[ext_resource type="PackedScene" uid="uid://dcs85o4n57oeh" path="res://Scene/pared_prueba.tscn" id="3_ucld0"]
+[ext_resource type="PackedScene" uid="uid://cd5llunxhmihb" path="res://Scene/key.tscn" id="4_h47vv"]
+[ext_resource type="Script" path="res://Scripts/Patrullas.gd" id="5_crmt8"]
+[ext_resource type="PackedScene" uid="uid://qjyoxcj2uha7" path="res://Scene/talks.tscn" id="5_lcqo6"]
+
+[sub_resource type="Curve2D" id="Curve2D_xqv42"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 576, 128, 0, 0, 0, 0, 816, 128, 0, 0, 0, 0, 832, 512, 0, 0, 0, 0, 576, 512, 0, 0, 0, 0, 576, 128)
+}
+point_count = 5
+
+[node name="Pruebas" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_1fi01")]
+position = Vector2(64, 128)
+
+[node name="Key" parent="." instance=ExtResource("4_h47vv")]
+position = Vector2(876, 345)
+
+[node name="Talks" parent="." instance=ExtResource("5_lcqo6")]
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 599.0
+offset_top = 859.0
+offset_right = 1336.0
+offset_bottom = 1042.0
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_xqv42")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(576, 128)
+script = ExtResource("5_crmt8")
+
+[node name="Guard" parent="Path2D/PathFollow2D" instance=ExtResource("1_mnqfn")]
+position = Vector2(-568, -344)
+
+[node name="paredes" type="Node" parent="."]
+
+[node name="Pared_prueba2" parent="paredes" instance=ExtResource("3_ucld0")]
+position = Vector2(708, 273)
+collision_mask = 3
+
+[node name="Pared_prueba3" parent="paredes" instance=ExtResource("3_ucld0")]
+position = Vector2(896, 552)
+rotation = 1.5708
+collision_mask = 3
+
+[node name="Pared_prueba" parent="paredes" instance=ExtResource("3_ucld0")]
+position = Vector2(926, 268)

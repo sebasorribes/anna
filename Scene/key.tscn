@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cd5llunxhmihb"]
+
+[ext_resource type="Script" path="res://Scripts/key.gd" id="1_b8k6n"]
+[ext_resource type="Texture2D" uid="uid://djins2m3nvm5w" path="res://sprite temporales/Objects/Key.png" id="1_t3qnv"]
+[ext_resource type="PackedScene" uid="uid://qjyoxcj2uha7" path="res://Scene/talks.tscn" id="2_vess2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fgf5h"]
+size = Vector2(12, 36)
+
+[node name="Key" type="Area2D"]
+position = Vector2(613, 318)
+collision_layer = 8
+script = ExtResource("1_b8k6n")
+dialog_scene = ExtResource("2_vess2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_t3qnv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_fgf5h")

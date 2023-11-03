@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfqy4g3mvoo6c"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_c1c7c"]
+[ext_resource type="Texture2D" uid="uid://c3mpryolcdtrb" path="res://Fondos temporales/FondoProvisional.jpg" id="2_3u1h1"]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_c1c7c")
+
+[node name="Play" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.0
+offset_top = 342.0
+offset_right = 155.0
+offset_bottom = 395.0
+grow_horizontal = 2
+text = "Jugar"
+
+[node name="Exit" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.0
+offset_top = 157.0
+offset_right = 154.0
+offset_bottom = 213.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+text = "Salir"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(963.717, 543.5)
+scale = Vector2(6.42478, 6.47024)
+texture = ExtResource("2_3u1h1")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

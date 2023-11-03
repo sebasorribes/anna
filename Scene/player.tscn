@@ -1,0 +1,84 @@
+[gd_scene load_steps=8 format=3 uid="uid://bsmg166h52knq"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_wisx3"]
+[ext_resource type="Texture2D" uid="uid://c8m7hnlf8x1mp" path="res://sprites/player/playerback2.png" id="2_n2b25"]
+[ext_resource type="Texture2D" uid="uid://ditatx6id0v2l" path="res://sprites/player/player3.png" id="3_jmhoa"]
+[ext_resource type="Script" path="res://Scripts/InteractionDetection.gd" id="22_k25gy"]
+[ext_resource type="Texture2D" uid="uid://wiwov5k8b4s6" path="res://sprites/player/playerside.png" id="24_pq864"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ea3f2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n2b25")
+}],
+"loop": true,
+"name": &"Back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jmhoa")
+}],
+"loop": true,
+"name": &"Front",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_pq864")
+}],
+"loop": true,
+"name": &"Side",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1jlrc"]
+size = Vector2(229.73, 382.883)
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(1.5, 1.5)
+collision_mask = 14
+script = ExtResource("1_wisx3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4.33333, -22.6667)
+scale = Vector2(0.526042, 0.666667)
+sprite_frames = SubResource("SpriteFrames_ea3f2")
+animation = &"Side"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.333334, -8.33334)
+scale = Vector2(0.148, 0.148)
+shape = SubResource("RectangleShape2D_1jlrc")
+
+[node name="InteractionDetectionRight" type="RayCast2D" parent="."]
+position = Vector2(0.556149, -7.87788)
+rotation = 4.71239
+target_position = Vector2(0, 30.34)
+collision_mask = 8
+collide_with_areas = true
+script = ExtResource("22_k25gy")
+
+[node name="InteractionDetectionLeft" type="RayCast2D" parent="."]
+position = Vector2(0.556363, -7.87791)
+rotation = 1.5708
+target_position = Vector2(0, 30.34)
+collision_mask = 8
+collide_with_areas = true
+script = ExtResource("22_k25gy")
+
+[node name="InteractionDetectionUp" type="RayCast2D" parent="."]
+position = Vector2(0.556272, -7.87773)
+rotation = 3.14159
+target_position = Vector2(0, 40.835)
+collision_mask = 8
+collide_with_areas = true
+script = ExtResource("22_k25gy")
+
+[node name="InteractionDetectionDown" type="RayCast2D" parent="."]
+position = Vector2(0.556302, -7.87791)
+target_position = Vector2(0, 40.835)
+collision_mask = 8
+collide_with_areas = true
+script = ExtResource("22_k25gy")
