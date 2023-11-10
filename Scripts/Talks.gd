@@ -32,4 +32,4 @@ func next_text():
 
 func final_tutorial():
 	if(Global.final_tutorial):
-		get_tree().change_scene_to_file("res://Scene/Nivel2.tscn")
+		get_tree().change_scene_to_file("res://Scene/nivel1.tscn")

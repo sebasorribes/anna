@@ -7,5 +7,9 @@ res://Scene/guard.tscn
 res://Scene/key.tscn
 res://Scene/talks.tscn
 res://Scene/tutorial.tscn
-res://Scene/carta_inicio_n°_1.tscn
 res://Scene/nivel1.tscn
+res://Scripts/ObjetosEscenario/Armaduras_tutorial.gd
+res://Scripts/ObjetosEscenario/Bancos_tutorial.gd
+res://Scripts/guard.gd
+res://Scripts/Patrullas.gd
+res://Scripts/cambioAnimacionGuardia.gd
