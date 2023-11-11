@@ -1,6 +1,9 @@
 res://Scene/Nivel2.tscn
 res://Scripts/key.gd
 res://Scripts/player.gd
+res://Scripts/global.gd
+res://Scripts/ObjetosEscenario/Pedernal.gd
+res://Scripts/Interactable.gd
 res://Scene/player.tscn
 res://Scene/main_menu.tscn
 res://Scene/guard.tscn
@@ -8,8 +11,11 @@ res://Scene/key.tscn
 res://Scene/talks.tscn
 res://Scene/tutorial.tscn
 res://Scene/nivel1.tscn
-res://Scripts/ObjetosEscenario/Armaduras_tutorial.gd
-res://Scripts/ObjetosEscenario/Bancos_tutorial.gd
-res://Scripts/guard.gd
-res://Scripts/Patrullas.gd
-res://Scripts/cambioAnimacionGuardia.gd
+res://Scripts/ObjetosEscenario/Caja_noreste.gd
+res://Scripts/ObjetosEscenario/Escalera.gd
+res://Scripts/ObjetosEscenario/Caja_esteNivel2.gd
+res://Scripts/ObjetosEscenario/CajaBarril_suresteNivel2.gd
+res://Scripts/ObjetosEscenario/Armario_abierto_este.gd
+res://Scripts/ObjetosEscenario/estanteria_noresteNivel2.gd
+res://Scripts/ObjetosEscenario/Comoda_sur.gd
+res://Scripts/ObjetosEscenario/CajaBarril_surNivel2.gd
