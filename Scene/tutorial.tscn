@@ -88,6 +88,24 @@ size = Vector2(54.5, 28.169)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7xjvo"]
 size = Vector2(124, 87.0001)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_la0pi"]
+size = Vector2(79, 98)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ywej"]
+size = Vector2(110, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_itc3k"]
+size = Vector2(88, 115)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d61xk"]
+size = Vector2(109.53, 170.715)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqwe0"]
+size = Vector2(71.8805, 195)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bo77y"]
+size = Vector2(144, 107.783)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ornop"]
 size = Vector2(197, 68)
 
@@ -97,32 +115,17 @@ size = Vector2(54, 98)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y34as"]
 size = Vector2(53.5, 47)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_la0pi"]
-size = Vector2(79, 98)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ywej"]
-size = Vector2(110, 128)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jml8x"]
 size = Vector2(121, 197)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t50ho"]
 size = Vector2(75, 32.75)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_itc3k"]
-size = Vector2(88, 115)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8ani"]
 size = Vector2(77, 101.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uc80e"]
 size = Vector2(59.095, 170.715)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_d61xk"]
-size = Vector2(109.53, 170.715)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqwe0"]
-size = Vector2(71.8805, 195)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_33yee"]
 size = Vector2(56, 153.31)
@@ -141,9 +144,6 @@ size = Vector2(72, 176)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r8b7u"]
 size = Vector2(24, 139.155)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bo77y"]
-size = Vector2(144, 107.783)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eiixr"]
 size = Vector2(112, 8)
@@ -319,21 +319,6 @@ script = ExtResource("8_6e30o")
 [node name="collision" type="CollisionPolygon2D" parent="Escenario/Objetos/Librero_basura"]
 polygon = PackedVector2Array(1427, 376, 1448, 358, 1445, 253, 1377, 325)
 
-[node name="Mesa_conVela" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(1606.5, 660)
-shape = SubResource("RectangleShape2D_ornop")
-
-[node name="Silla_habitacion_miraSur" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(1550, 585)
-shape = SubResource("RectangleShape2D_5dow8")
-
-[node name="Silla_habitacion_miraEste" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(1480.75, 650)
-shape = SubResource("RectangleShape2D_y34as")
-
-[node name="Silla_habitacion_Cruzada" type="CollisionPolygon2D" parent="Escenario/Objetos"]
-polygon = PackedVector2Array(1689, 616, 1689, 553, 1655, 519, 1654, 557, 1625, 580, 1625, 612, 1659, 635)
-
 [node name="Mesa_Recipiente" type="StaticBody2D" parent="Escenario/Objetos"]
 collision_layer = 8
 script = ExtResource("10_h4xvr")
@@ -350,18 +335,6 @@ script = ExtResource("10_2ybrd")
 position = Vector2(1744, 1016)
 shape = SubResource("RectangleShape2D_7ywej")
 
-[node name="ZonaBasura2_habitacion2" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(1859.5, 981.5)
-shape = SubResource("RectangleShape2D_jml8x")
-
-[node name="Brasero_habitacion_derecha" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(1192.91, 797.667)
-shape = SubResource("RectangleShape2D_t50ho")
-
-[node name="Brasero_habitacion_izquierda" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(949.605, 797.667)
-shape = SubResource("RectangleShape2D_t50ho")
-
 [node name="Caja_Habitacion_trigo_puerta" type="StaticBody2D" parent="Escenario/Objetos"]
 collision_layer = 8
 script = ExtResource("5_yps50")
@@ -369,18 +342,6 @@ script = ExtResource("5_yps50")
 [node name="Caja_habitacion_cercaPuerta" type="CollisionShape2D" parent="Escenario/Objetos/Caja_Habitacion_trigo_puerta"]
 position = Vector2(941, 936.5)
 shape = SubResource("RectangleShape2D_itc3k")
-
-[node name="CajaBarril_habitacion_cercaPuerta2" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(863.5, 828.25)
-shape = SubResource("RectangleShape2D_o8ani")
-
-[node name="Antorcha_Este" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(379.75, 85.3575)
-shape = SubResource("RectangleShape2D_uc80e")
-
-[node name="Antorcha_Oeste" type="CollisionShape2D" parent="Escenario/Objetos"]
-position = Vector2(208.75, 85.3575)
-shape = SubResource("RectangleShape2D_uc80e")
 
 [node name="Puerta" type="StaticBody2D" parent="Escenario/Objetos"]
 collision_layer = 8
@@ -397,6 +358,53 @@ script = ExtResource("11_m01n5")
 [node name="collider" type="CollisionShape2D" parent="Escenario/Objetos/Armadura_Noreste"]
 position = Vector2(612.06, 97.5)
 shape = SubResource("RectangleShape2D_iqwe0")
+
+[node name="Espejo" type="StaticBody2D" parent="Escenario/Objetos"]
+collision_layer = 8
+script = ExtResource("10_616jg")
+
+[node name="Espejo_collider" type="CollisionShape2D" parent="Escenario/Objetos/Espejo"]
+position = Vector2(1096, 117.891)
+shape = SubResource("RectangleShape2D_bo77y")
+
+[node name="Mesa_conVela" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1606.5, 660)
+shape = SubResource("RectangleShape2D_ornop")
+
+[node name="Silla_habitacion_miraSur" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1550, 585)
+shape = SubResource("RectangleShape2D_5dow8")
+
+[node name="Silla_habitacion_miraEste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1480.75, 650)
+shape = SubResource("RectangleShape2D_y34as")
+
+[node name="Silla_habitacion_Cruzada" type="CollisionPolygon2D" parent="Escenario/Objetos"]
+polygon = PackedVector2Array(1689, 616, 1689, 553, 1655, 519, 1654, 557, 1625, 580, 1625, 612, 1659, 635)
+
+[node name="ZonaBasura2_habitacion2" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1859.5, 981.5)
+shape = SubResource("RectangleShape2D_jml8x")
+
+[node name="Brasero_habitacion_derecha" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(1192.91, 797.667)
+shape = SubResource("RectangleShape2D_t50ho")
+
+[node name="Brasero_habitacion_izquierda" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(949.605, 797.667)
+shape = SubResource("RectangleShape2D_t50ho")
+
+[node name="CajaBarril_habitacion_cercaPuerta2" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(863.5, 828.25)
+shape = SubResource("RectangleShape2D_o8ani")
+
+[node name="Antorcha_Este" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(379.75, 85.3575)
+shape = SubResource("RectangleShape2D_uc80e")
+
+[node name="Antorcha_Oeste" type="CollisionShape2D" parent="Escenario/Objetos"]
+position = Vector2(208.75, 85.3575)
+shape = SubResource("RectangleShape2D_uc80e")
 
 [node name="Armadura_Noroeste" type="CollisionShape2D" parent="Escenario/Objetos"]
 position = Vector2(68, 244.655)
@@ -425,14 +433,6 @@ shape = SubResource("RectangleShape2D_r8b7u")
 [node name="Vela_Larga_Este" type="CollisionShape2D" parent="Escenario/Objetos"]
 position = Vector2(1180, 133.577)
 shape = SubResource("RectangleShape2D_r8b7u")
-
-[node name="Espejo" type="StaticBody2D" parent="Escenario/Objetos"]
-collision_layer = 8
-script = ExtResource("10_616jg")
-
-[node name="Espejo_collider" type="CollisionShape2D" parent="Escenario/Objetos/Espejo"]
-position = Vector2(1096, 117.891)
-shape = SubResource("RectangleShape2D_bo77y")
 
 [node name="Baranda_Norte" type="CollisionShape2D" parent="Escenario/Objetos"]
 position = Vector2(1168, 376.8)

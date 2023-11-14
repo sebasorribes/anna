@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cx0bgvecpdhtf"]
 
-[ext_resource type="Texture2D" uid="uid://54us5uush53w" path="res://sprite escenario/Sprites Nivel 1/candleA_01.png" id="1_6fty1"]
+[ext_resource type="Texture2D" uid="uid://54us5uush53w" path="res://sprite vela/candleA_01.png" id="1_6fty1"]
 [ext_resource type="Script" path="res://Scripts/velas.gd" id="1_ig5j2"]
-[ext_resource type="Texture2D" uid="uid://bcjfhybgbgbap" path="res://sprite escenario/Sprites Nivel 1/candleA_01 - copia (2).png" id="2_6wyk0"]
-[ext_resource type="Texture2D" uid="uid://b6wsylgpl42vp" path="res://sprite escenario/Sprites Nivel 1/candleA_01 - copia.png" id="3_b8jpy"]
+[ext_resource type="Texture2D" uid="uid://bcjfhybgbgbap" path="res://sprite vela/candleA_01 - copia (2).png" id="2_6wyk0"]
+[ext_resource type="Texture2D" uid="uid://b6wsylgpl42vp" path="res://sprite vela/candleA_01 - copia.png" id="3_b8jpy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u2guo"]
 resource_local_to_scene = true

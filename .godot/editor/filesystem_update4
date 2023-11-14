@@ -1,4 +1,4 @@
-res://Scene/Nivel2.tscn
+res://Scene/nivel1.tscn
 res://Scripts/key.gd
 res://Scripts/player.gd
 res://Scene/player.tscn
@@ -7,5 +7,5 @@ res://Scene/guard.tscn
 res://Scene/key.tscn
 res://Scene/talks.tscn
 res://Scene/tutorial.tscn
-res://Scene/carta_inicio_n°_1.tscn
-res://Scene/nivel1.tscn
+res://Scene/Nivel2.tscn
+res://Scene/velas.tscn

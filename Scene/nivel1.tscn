@@ -1,7 +1,7 @@
-[gd_scene load_steps=80 format=3 uid="uid://cw7o0ju3jwon"]
+[gd_scene load_steps=81 format=3 uid="uid://cw7o0ju3jwon"]
 
 [ext_resource type="Texture2D" uid="uid://covikuocrdscd" path="res://Backgrounds/carcel.JPG" id="1_rndmu"]
-[ext_resource type="PackedScene" path="res://Scene/velas.tscn" id="2_m88gh"]
+[ext_resource type="PackedScene" uid="uid://cx0bgvecpdhtf" path="res://Scene/velas.tscn" id="2_m88gh"]
 [ext_resource type="Script" path="res://Scripts/Interactable.gd" id="3_ykyai"]
 [ext_resource type="PackedScene" uid="uid://bsmg166h52knq" path="res://Scene/player.tscn" id="4_cbpdv"]
 [ext_resource type="PackedScene" uid="uid://d0ujall1phwgq" path="res://Scene/carta_inicio_n°_1.tscn" id="5_5srws"]
@@ -52,10 +52,10 @@ size = Vector2(154.882, 20)
 size = Vector2(72.682, 85.3547)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wuoev"]
-size = Vector2(499.256, 46.1612)
+size = Vector2(497.526, 39.1935)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uui70"]
-size = Vector2(533.001, 47.9032)
+size = Vector2(533.001, 40.9357)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_boleg"]
 size = Vector2(296.785, 54)
@@ -87,6 +87,9 @@ size = Vector2(105.562, 48.7742)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8x8x1"]
 size = Vector2(105.562, 51.387)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rablw"]
+size = Vector2(16.0568, 47.9031)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3ppv1"]
 size = Vector2(52.3976, 33.9678)
 
@@ -109,10 +112,10 @@ size = Vector2(15.1108, 20)
 size = Vector2(16.9221, 35.258)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2isd5"]
-size = Vector2(18.1704, 17.8387)
+size = Vector2(18.1704, 20.0326)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8hm3q"]
-size = Vector2(37.2063, 23.9355)
+size = Vector2(37.2063, 24.1614)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmpcp"]
 
@@ -145,14 +148,14 @@ radius = 5.19153
 height = 48.7742
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_42or0"]
-radius = 5.19151
+radius = 5.19115
 height = 48.774
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xfidn"]
 size = Vector2(115.945, 48.7742)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hw78k"]
-size = Vector2(12.5957, 10.4516)
+size = Vector2(12.9792, 10.4515)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uf0qy"]
 size = Vector2(16.0568, 16.0967)
@@ -249,58 +252,46 @@ position = Vector2(-37.2063, -96.6773)
 position = Vector2(-468.972, -99.2902)
 
 [node name="Velas5" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(-326.204, 61.8386)
+position = Vector2(-327.069, 31.3548)
 
 [node name="Velas6" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(-202.471, 101.032)
+position = Vector2(-201.606, 32.2258)
 
 [node name="Velas7" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(-53.6462, 57.4838)
-
-[node name="Velas8" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(-404.077, 137.613)
+position = Vector2(-53.6462, 31.3548)
 
 [node name="Velas9" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(-533.001, 245.613)
+position = Vector2(-481.085, 32.2257)
 
 [node name="Velas10" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(-353.027, 244.742)
+position = Vector2(-353.027, 138.484)
 
 [node name="Velas11" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(-116.81, 174.193)
-
-[node name="Velas12" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(51.9157, 246.483)
+position = Vector2(-115.08, 135)
 
 [node name="Velas13" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(135.846, 172.451)
+position = Vector2(139.307, 135)
 
 [node name="Velas14" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(368.601, 169.838)
+position = Vector2(323.608, 138.484)
 
 [node name="Velas15" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(445.61, 243.871)
-
-[node name="Velas16" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(338.317, 244.742)
-
-[node name="Velas17" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(473.298, 101.903)
+position = Vector2(474.163, 135.871)
 
 [node name="Velas18" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(354.757, -27.8709)
+position = Vector2(353.892, -60.9676)
 
 [node name="Velas19" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(292.458, 49.6451)
+position = Vector2(503.582, -57.4838)
 
 [node name="Velas20" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(424.843, -243)
+position = Vector2(426.574, -279.58)
 
 [node name="Velas21" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(506.178, -243)
+position = Vector2(509.639, -279.58)
 
 [node name="Velas22" parent="Nivel_1" instance=ExtResource("2_m88gh")]
-position = Vector2(172.187, -242.129)
+position = Vector2(173.918, -279.58)
 
 [node name="TextureRect" type="TextureRect" parent="Nivel_1"]
 offset_left = -689.613
@@ -311,7 +302,6 @@ texture = ExtResource("1_rndmu")
 expand_mode = 1
 
 [node name="Paredes" type="StaticBody2D" parent="Nivel_1"]
-visible = false
 collision_layer = 4
 
 [node name="Pared_Oeste" type="CollisionShape2D" parent="Nivel_1/Paredes"]
@@ -375,11 +365,11 @@ position = Vector2(67.4904, -113.226)
 shape = SubResource("RectangleShape2D_xfd5e")
 
 [node name="pared_medio" type="CollisionShape2D" parent="Nivel_1/Paredes"]
-position = Vector2(-272.125, 28.3064)
+position = Vector2(-272.99, 24.8225)
 shape = SubResource("RectangleShape2D_wuoev")
 
 [node name="pared_medio2" type="CollisionShape2D" parent="Nivel_1/Paredes"]
-position = Vector2(-127.193, 137.177)
+position = Vector2(-127.193, 133.693)
 shape = SubResource("RectangleShape2D_uui70")
 
 [node name="pared_noroeste" type="CollisionShape2D" parent="Nivel_1/Paredes"]
@@ -421,6 +411,10 @@ shape = SubResource("RectangleShape2D_pbnqd")
 [node name="pared_38" type="CollisionShape2D" parent="Nivel_1/Paredes"]
 position = Vector2(484.546, 137.177)
 shape = SubResource("RectangleShape2D_8x8x1")
+
+[node name="pared_39" type="CollisionShape2D" parent="Nivel_1/Paredes"]
+position = Vector2(-325.579, -97.9838)
+shape = SubResource("RectangleShape2D_rablw")
 
 [node name="Objetos" type="StaticBody2D" parent="Nivel_1"]
 collision_layer = 8
@@ -492,7 +486,7 @@ collision_layer = 8
 script = ExtResource("3_ykyai")
 
 [node name="licor_collider" type="CollisionShape2D" parent="Nivel_1/Objetos/licor_suave"]
-position = Vector2(-353.459, 173.984)
+position = Vector2(-352.161, 165.484)
 shape = SubResource("RectangleShape2D_2isd5")
 
 [node name="polvo_negro" type="StaticBody2D" parent="Nivel_1/Objetos"]
@@ -500,7 +494,7 @@ collision_layer = 8
 script = ExtResource("3_ykyai")
 
 [node name="polvo_negro_collider" type="CollisionShape2D" parent="Nivel_1/Objetos/polvo_negro"]
-position = Vector2(-209.393, 157.645)
+position = Vector2(-209.393, 146.322)
 shape = SubResource("RectangleShape2D_8hm3q")
 
 [node name="agua_contaminada" type="StaticBody2D" parent="Nivel_1/Objetos"]
@@ -540,7 +534,7 @@ collision_layer = 8
 script = ExtResource("3_ykyai")
 
 [node name="cardo_collider" type="CollisionShape2D" parent="Nivel_1/Objetos/cardo"]
-position = Vector2(521.32, 67.274)
+position = Vector2(526.079, 67.0644)
 shape = SubResource("RectangleShape2D_ysq0g")
 
 [node name="miel" type="StaticBody2D" parent="Nivel_1/Objetos"]
@@ -549,7 +543,7 @@ collision_layer = 8
 script = ExtResource("3_ykyai")
 
 [node name="miel_collider" type="CollisionShape2D" parent="Nivel_1/Objetos/miel"]
-position = Vector2(-0.865234, 1.74194)
+position = Vector2(4.32629, 2.61294)
 shape = SubResource("RectangleShape2D_1qhc2")
 
 [node name="palo1" type="CollisionShape2D" parent="Nivel_1/Objetos"]
@@ -569,7 +563,7 @@ position = Vector2(239.677, 11.3225)
 shape = SubResource("CapsuleShape2D_najt0")
 
 [node name="palo5" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(-352.161, 49.6451)
+position = Vector2(-352.161, 38.3225)
 shape = SubResource("CapsuleShape2D_42or0")
 
 [node name="palosss" type="CollisionShape2D" parent="Nivel_1/Objetos"]
@@ -577,19 +571,19 @@ position = Vector2(313.225, -186.387)
 shape = SubResource("RectangleShape2D_xfidn")
 
 [node name="basurita" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(-335.097, 176.806)
+position = Vector2(-335.289, 174.193)
 shape = SubResource("RectangleShape2D_hw78k")
 
 [node name="basurita2" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(-100.995, 173.984)
+position = Vector2(-101.236, 168.967)
 shape = SubResource("RectangleShape2D_uf0qy")
 
 [node name="basurita3" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(86.8383, 174.193)
+position = Vector2(87.3914, 168.967)
 shape = SubResource("RectangleShape2D_pjwh1")
 
 [node name="basurita4" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(-82.1998, 174.193)
+position = Vector2(-82.1998, 168.967)
 shape = SubResource("RectangleShape2D_5qcmk")
 
 [node name="basurita5" type="CollisionShape2D" parent="Nivel_1/Objetos"]
@@ -609,15 +603,15 @@ position = Vector2(289.863, -2.61292)
 shape = SubResource("RectangleShape2D_2xj81")
 
 [node name="basurita9" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(530.405, 22.6451)
+position = Vector2(535.597, 22.6451)
 shape = SubResource("RectangleShape2D_qjpbq")
 
 [node name="basurita10" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(529.54, 83.6128)
+position = Vector2(535.597, 83.6128)
 shape = SubResource("RectangleShape2D_ipric")
 
 [node name="basurita11" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(-226.698, 61.8386)
+position = Vector2(-227.564, 53.1289)
 shape = SubResource("RectangleShape2D_82fgm")
 
 [node name="basurita12" type="CollisionShape2D" parent="Nivel_1/Objetos"]
@@ -625,15 +619,15 @@ position = Vector2(346.105, -246.693)
 shape = SubResource("RectangleShape2D_xcsmh")
 
 [node name="piedra_basura" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(-156.3, 158.516)
+position = Vector2(-154.882, 146.322)
 shape = SubResource("RectangleShape2D_vy3mp")
 
 [node name="piedra_basura2" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(452.748, -38.3226)
+position = Vector2(453.397, -42.6774)
 shape = SubResource("RectangleShape2D_a5y4p")
 
 [node name="piedra_basura3" type="CollisionShape2D" parent="Nivel_1/Objetos"]
-position = Vector2(402.347, -38.3225)
+position = Vector2(402.347, -42.6774)
 shape = SubResource("RectangleShape2D_6ueii")
 
 [node name="piedra_basura4" type="CollisionShape2D" parent="Nivel_1/Objetos"]
@@ -689,6 +683,7 @@ position = Vector2(467, 337)
 scale = Vector2(0.577862, 0.574074)
 
 [node name="Carta inicio n° 1" parent="." instance=ExtResource("5_5srws")]
+visible = false
 anchors_preset = 8
 anchor_top = 0.5
 anchor_bottom = 0.5
