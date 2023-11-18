@@ -17,6 +17,28 @@ offset_bottom = 395.0
 grow_horizontal = 2
 text = "Jugar"
 
+[node name="Intrucctions" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.0
+offset_top = 409.0
+offset_right = 155.0
+offset_bottom = 462.0
+grow_horizontal = 2
+text = "Instrucciones"
+
+[node name="Credits" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.0
+offset_top = 475.0
+offset_right = 155.0
+offset_bottom = 528.0
+grow_horizontal = 2
+text = "Creditos"
+
 [node name="Exit" type="Button" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
@@ -40,4 +62,6 @@ texture = ExtResource("2_3u1h1")
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Intrucctions" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
