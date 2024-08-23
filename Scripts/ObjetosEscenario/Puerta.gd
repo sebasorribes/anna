@@ -8,7 +8,7 @@ func interact():
 	else:
 		var textito
 		textito=[
-			"No recuendo en que lugar deje la llave de la puerta, deberia realizar la pocion \"Encuentralo todo\" para encontrarla. \n Necesito un ingrediente vegetal, un ingrediente animal y un frasco donde colocarla"
+			"No recuendo en que lugar deje la llave de la puerta, deberia realizar la pocion \"Encuentralo todo\" para encontrarla. \n Necesito un ingrediente vegetal, un ingrediente animal y un frasco donde colocarla. Luego realizarla en la mi mesa de trabajo, seguramente en ese lugar puedo encontrar el frasco."
 		]
 		Global.dialog=textito
 		Global.hay_dialogo=true

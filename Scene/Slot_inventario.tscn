@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://8073kn5bis08"]
+
+[ext_resource type="Script" path="res://Scripts/Slot_inventario.gd" id="1_nxhyw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2yu82"]
+
+[node name="Slot_inventario" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nxhyw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.698039, 0.627451, 0.298039, 0.886275)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047
+anchor_top = 0.083
+anchor_right = 0.931
+anchor_bottom = 0.917
+offset_left = -0.202003
+offset_top = 0.255997
+offset_right = 8.25391
+offset_bottom = -0.256042
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2yu82")
+button_mask = 3
+shortcut_feedback = false
+shortcut_in_tooltip = false
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

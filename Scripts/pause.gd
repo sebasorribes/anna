@@ -2,6 +2,7 @@ extends Node
 
 @onready var player = get_parent().get_node("Player")
 @onready var level = get_parent()
+@onready var musicControl=get_parent().get_node("Music")
 var paused : bool = false
 
 func _ready():
@@ -17,6 +18,7 @@ func pause_menu():
 	if (paused):
 		hide_pause()
 		Engine.time_scale=1
+		musicControl.stream_paused=false
 		player.set_physics_process(true)
 		player.get_child(2).set_process(true)
 		player.get_child(3).set_process(true)
@@ -25,6 +27,7 @@ func pause_menu():
 	else:
 		show_pause()
 		Engine.time_scale=0
+		musicControl.stream_paused=true
 		player.set_physics_process(false)
 		player.get_child(2).set_process(false)
 		player.get_child(3).set_process(false)
@@ -47,4 +50,4 @@ func _on_resume_pressed():
 	pause_menu()
 
 func _on_menu_pressed():
-	get_tree().change_scene_to_file("res://.godot/exported/133200997/export-b40cb0e6e92fc9a5589c24930986624a-main_menu.scn")
+	get_tree().change_scene_to_file("res://Scene/main_menu.tscn")

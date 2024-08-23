@@ -1,0 +1,339 @@
+[gd_scene load_steps=16 format=3 uid="uid://hkst4j6fin36"]
+
+[ext_resource type="Script" path="res://Scripts/Inventory.gd" id="1_n2r5m"]
+[ext_resource type="PackedScene" uid="uid://8073kn5bis08" path="res://Scene/Slot_inventario.tscn" id="2_7cfhx"]
+[ext_resource type="AudioStream" uid="uid://cxl2fkpv713he" path="res://audio/minecraft potion sound.mp3" id="3_h0fpc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8v1e5"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfq7a"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6vov"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fr5jf"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ogv1k"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kodae"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8gka"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_selr6"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stlxl"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsril"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wlxv"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4fxs"]
+size = Vector2(48, 32)
+
+[node name="inventory" type="Control"]
+layout_mode = 3
+anchor_top = 0.833
+anchor_right = 0.187
+anchor_bottom = 1.0
+offset_top = 0.255981
+offset_right = 0.557999
+grow_vertical = 0
+script = ExtResource("1_n2r5m")
+metadata/_edit_horizontal_guides_ = []
+
+[node name="Slot_inventario0" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.031
+anchor_top = 0.062
+anchor_right = 0.207
+anchor_bottom = 0.312
+offset_left = 0.0639997
+offset_top = 0.0639997
+offset_right = 3.008
+offset_bottom = 0.0639992
+
+[node name="Slot0" type="Area2D" parent="Slot_inventario0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario0/Slot0"]
+position = Vector2(24, 16)
+shape = SubResource("RectangleShape2D_8v1e5")
+
+[node name="Slot_inventario1" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.281
+anchor_top = 0.062
+anchor_right = 0.469
+anchor_bottom = 0.312
+offset_left = 0.0639954
+offset_top = 0.0639997
+offset_right = -0.064003
+offset_bottom = 0.0639992
+
+[node name="Slot1" type="Area2D" parent="Slot_inventario1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario1/Slot1"]
+position = Vector2(24, 16)
+shape = SubResource("RectangleShape2D_sfq7a")
+
+[node name="Slot_inventario2" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.531
+anchor_top = 0.062
+anchor_right = 0.719
+anchor_bottom = 0.312
+offset_left = 0.0639954
+offset_top = 0.0639997
+offset_right = -0.0640106
+offset_bottom = 0.0639992
+
+[node name="Slot2" type="Area2D" parent="Slot_inventario2"]
+position = Vector2(-64, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario2/Slot2"]
+position = Vector2(88, 16)
+shape = SubResource("RectangleShape2D_b6vov")
+
+[node name="Slot_inventario3" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.781
+anchor_top = 0.062
+anchor_right = 0.969
+anchor_bottom = 0.312
+offset_left = 0.0639954
+offset_top = 0.0639997
+offset_right = -0.0640106
+offset_bottom = 0.0639992
+
+[node name="Slot3" type="Area2D" parent="Slot_inventario3"]
+position = Vector2(-128, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario3/Slot3"]
+position = Vector2(152, 16)
+shape = SubResource("RectangleShape2D_fr5jf")
+
+[node name="Slot_inventario4" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.031
+anchor_top = 0.375
+anchor_right = 0.219
+anchor_bottom = 0.625
+offset_left = 0.0639997
+offset_right = -0.064003
+
+[node name="Slot4" type="Area2D" parent="Slot_inventario4"]
+position = Vector2(64, -40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario4/Slot4"]
+position = Vector2(-40, 56)
+shape = SubResource("RectangleShape2D_ogv1k")
+
+[node name="Slot_inventario5" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.281
+anchor_top = 0.375
+anchor_right = 0.469
+anchor_bottom = 0.625
+offset_left = 0.0639954
+offset_right = -0.064003
+
+[node name="Slot5" type="Area2D" parent="Slot_inventario5"]
+position = Vector2(0, -40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario5/Slot5"]
+position = Vector2(24, 56)
+shape = SubResource("RectangleShape2D_kodae")
+
+[node name="Slot_inventario6" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.531
+anchor_top = 0.375
+anchor_right = 0.719
+anchor_bottom = 0.625
+offset_left = 0.0639954
+offset_right = -0.0640106
+
+[node name="Slot6" type="Area2D" parent="Slot_inventario6"]
+position = Vector2(-64, -40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario6/Slot6"]
+position = Vector2(88, 56)
+shape = SubResource("RectangleShape2D_a8gka")
+
+[node name="Slot_inventario7" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.781
+anchor_top = 0.375
+anchor_right = 0.965
+anchor_bottom = 0.625
+offset_left = 0.0639954
+offset_right = 0.959991
+
+[node name="Slot7" type="Area2D" parent="Slot_inventario7"]
+position = Vector2(-128, -40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario7/Slot7"]
+position = Vector2(152, 56)
+shape = SubResource("RectangleShape2D_selr6")
+
+[node name="Slot_inventario8" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.031
+anchor_top = 0.687
+anchor_right = 0.219
+anchor_bottom = 0.937
+offset_left = 0.0639997
+offset_top = 0.0639954
+offset_right = -0.064003
+offset_bottom = 0.0639954
+
+[node name="Slot8" type="Area2D" parent="Slot_inventario8"]
+position = Vector2(64, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario8/Slot8"]
+position = Vector2(-40, 96)
+shape = SubResource("RectangleShape2D_stlxl")
+
+[node name="Slot_inventario9" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.281
+anchor_top = 0.687
+anchor_right = 0.469
+anchor_bottom = 0.945
+offset_left = 0.0639954
+offset_top = 0.0639954
+offset_right = -0.064003
+offset_bottom = -0.960007
+
+[node name="Slot9" type="Area2D" parent="Slot_inventario9"]
+position = Vector2(0, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario9/Slot9"]
+position = Vector2(24, 96)
+shape = SubResource("RectangleShape2D_tsril")
+
+[node name="Slot_inventario10" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.531
+anchor_top = 0.687
+anchor_right = 0.719
+anchor_bottom = 0.937
+offset_left = 0.0639954
+offset_top = 0.0639954
+offset_right = -0.0640106
+offset_bottom = 0.0639954
+
+[node name="Slot10" type="Area2D" parent="Slot_inventario10"]
+position = Vector2(-64, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario10/Slot10"]
+position = Vector2(88, 96)
+shape = SubResource("RectangleShape2D_3wlxv")
+
+[node name="Slot_inventario11" parent="." instance=ExtResource("2_7cfhx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.781
+anchor_top = 0.687
+anchor_right = 0.969
+anchor_bottom = 0.937
+offset_left = 0.0639954
+offset_top = 0.0639954
+offset_right = -0.0640106
+offset_bottom = 0.0639954
+
+[node name="Slot11" type="Area2D" parent="Slot_inventario11"]
+position = Vector2(-128, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot_inventario11/Slot11"]
+position = Vector2(152, 96)
+shape = SubResource("RectangleShape2D_h4fxs")
+
+[node name="FX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_h0fpc")
+volume_db = -5.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -176.0
+offset_right = 252.0
+offset_bottom = -136.0
+color = Color(0, 0, 0, 0.47451)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = -20.0
+offset_right = 124.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="click_slot" from="Slot_inventario0" to="." method="_on_slot_0_click"]
+[connection signal="mouse_entered" from="Slot_inventario0/Slot0" to="." method="_on_slot_0_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario0/Slot0" to="." method="_on_slot_0_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario1" to="." method="_on_slot_1_click"]
+[connection signal="mouse_entered" from="Slot_inventario1/Slot1" to="." method="_on_slot_1_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario1/Slot1" to="." method="_on_slot_1_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario2" to="." method="_on_click_slot_2"]
+[connection signal="mouse_entered" from="Slot_inventario2/Slot2" to="." method="_on_slot_2_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario2/Slot2" to="." method="_on_slot_2_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario3" to="." method="_on_click_slot_3"]
+[connection signal="mouse_entered" from="Slot_inventario3/Slot3" to="." method="_on_slot_3_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario3/Slot3" to="." method="_on_slot_3_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario4" to="." method="_on_click_slot_4"]
+[connection signal="mouse_entered" from="Slot_inventario4/Slot4" to="." method="_on_slot_4_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario4/Slot4" to="." method="_on_slot_4_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario5" to="." method="_on_click_slot_5"]
+[connection signal="mouse_entered" from="Slot_inventario5/Slot5" to="." method="_on_slot_5_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario5/Slot5" to="." method="_on_slot_5_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario6" to="." method="_on_click_slot_6"]
+[connection signal="mouse_entered" from="Slot_inventario6/Slot6" to="." method="_on_slot_6_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario6/Slot6" to="." method="_on_slot_6_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario7" to="." method="_on_click_slot_7"]
+[connection signal="mouse_entered" from="Slot_inventario7/Slot7" to="." method="_on_slot_7_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario7/Slot7" to="." method="_on_slot_7_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario8" to="." method="_on_click_slot_8"]
+[connection signal="mouse_entered" from="Slot_inventario8/Slot8" to="." method="_on_slot_8_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario8/Slot8" to="." method="_on_slot_8_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario9" to="." method="_on_click_slot_9"]
+[connection signal="mouse_entered" from="Slot_inventario9/Slot9" to="." method="_on_slot_9_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario9/Slot9" to="." method="_on_slot_9_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario10" to="." method="_on_click_slot_10"]
+[connection signal="mouse_entered" from="Slot_inventario10/Slot10" to="." method="_on_slot_10_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario10/Slot10" to="." method="_on_slot_10_mouse_exited"]
+[connection signal="click_slot" from="Slot_inventario11" to="." method="_on_click_slot_11"]
+[connection signal="mouse_entered" from="Slot_inventario11/Slot11" to="." method="_on_slot_11_mouse_entered"]
+[connection signal="mouse_exited" from="Slot_inventario11/Slot11" to="." method="_on_slot_11_mouse_exited"]

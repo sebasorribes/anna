@@ -1,0 +1,97 @@
+[gd_scene load_steps=5 format=3 uid="uid://daiewo8pk846d"]
+
+[ext_resource type="Script" path="res://Scripts/final.gd" id="1_2ug21"]
+[ext_resource type="Texture2D" uid="uid://eg8vcjwrqycb" path="res://Backgrounds/emmaconduende.png" id="2_81eq5"]
+[ext_resource type="Texture2D" uid="uid://caklamrah5heo" path="res://Backgrounds/FlechaDialogo.png" id="3_qd6g5"]
+[ext_resource type="AudioStream" uid="uid://dcyqjge6jjhn7" path="res://audio/tutorial.mp3" id="4_b1ret"]
+
+[node name="Final" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2ug21")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_81eq5")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 735.0
+offset_bottom = 559.0
+color = Color(0, 0, 0, 0.47451)
+
+[node name="parte1" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 731.0
+offset_bottom = 559.0
+theme_override_font_sizes/normal_font_size = 22
+text = "Emma, yace desmayada en el suelo del claro. Un gnomo, se acerca, observando cautelosamente antes de percatarse de la presencia de la bruja.
+
+GNOMO: (con preocupación) ¡Por las raíces de los robles! ¿Te encuentras bien?
+
+El gnomo levanta a la bruja con cuidado y la deposita sobre una roca.
+
+Emma: (despertando) ¿Dónde estoy?
+
+GNOMO: Bienvenida al Claro del Bosque del Tiempo. Que hayas logrado escapar demuestra que subestimé tu astucia.
+
+Emma: ¿Y tú quién eres?
+
+"
+
+[node name="parte2" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 731.0
+offset_bottom = 559.0
+theme_override_font_sizes/normal_font_size = 22
+text = "GNOMO: Soy Glimble, guardián de los secretos del reino. Fui yo quien te envió la carta para ayudarte a salir de tu encierro.
+
+Emma: La carta, aunque un tanto ofensiva, resultó ser de gran ayuda. Pero, ¿por qué me ayudaste?
+
+Glimble: Porque la Reina ha traído desgracia al reino. Mató al Rey y buscaba un reinado opresivo. Como guardián de los secretos, tenía un plan en marcha.
+
+Emma: ¿Y cuál era mi papel en todo esto?
+
+Glimble: Gracias a tu caótica fuga, los guardias se dispersaron, permitiéndonos entrar en la sala del trono. En ese preciso momento, presentamos al hijo bastardo del Rey, el verdadero heredero al trono.
+
+Emma: ¿Entonces ya no intentarán matarme?"
+
+[node name="parte3" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 731.0
+offset_bottom = 559.0
+theme_override_font_sizes/normal_font_size = 22
+text = "Glimble: Por supuesto que no. Además, me gustaría invitarte a la corte. Necesitamos a alguien con tu magia y astucia para guiar este reino por un mejor camino.
+
+Glimble extiende una mano hacia la bruja, invitándola a unirse.
+
+Glimble: ¿Qué dices? ¿Te unirás a este gnomo y al recién coronado rey?
+
+Emma: ¡Lo pensaré!
+
+Glimble: Como prefieras. La oferta estará siempre abierta.
+
+Luego de intercambiar saludos, la bruja y Glimble se despiden y emprenden rumbos diferentes. 
+
+															FIN."
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(708, 532)
+scale = Vector2(0.0363426, 0.0363426)
+texture = ExtResource("3_qd6g5")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_b1ret")
+volume_db = -15.0

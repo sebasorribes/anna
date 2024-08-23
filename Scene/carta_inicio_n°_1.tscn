@@ -75,7 +75,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = SubResource("FontVariation_d8f3o")
-text = "Sé quién es el asesino, y no es una maga principante como tú, pero está interesante toda la situación dada, por ende, te otorgaré algo de asistencia, por... diversión. Dejaré diversos ingredientes en el castillo para que puedas librarte de esta situación, usa tu imaginación.
+text = "Sé quién es el asesino, y no es una maga torpe como tú. porque soy alguien muy bueno, te otorgaré algo de asistencia. Dejé rota la cerradura de tu celda, los guardias son tan torpes que ni se daran cuenta. Usa tu imaginación.
 
 
 - Un amigo."

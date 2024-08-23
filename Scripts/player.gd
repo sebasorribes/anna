@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var speed=400 #velocidad del personaje
 
 func _ready():
-	$AnimatedSprite2D.play()
+	$AnimatedSprite2D.play("Side")
 	Global.hacia_comerdor=false
 	Global.hacia_habitacion=false
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -41,14 +41,23 @@ func _player_move(delta):
 	#carga la animacion del personaje, dependiendo si se esta moviendo o no.
 	#TO DO: poner las animaciones de movimiento vertical cuando esten listas.
 	if (velocity.x !=0):
-		$AnimatedSprite2D.animation="Side"
+		$AnimatedSprite2D.animation="sidewalk"
 		$AnimatedSprite2D.flip_v=false
 		$AnimatedSprite2D.flip_h=velocity.x<0
 	elif (velocity.y >0):
-		$AnimatedSprite2D.animation="Front"
+		$AnimatedSprite2D.animation="frontwalk"
 	elif (velocity.y < 0):
-		$AnimatedSprite2D.animation="Back"
+		$AnimatedSprite2D.animation="backwalk"
 	
+	if(Input.is_action_just_released("move_right")):
+		$AnimatedSprite2D.animation="Side"
+	if(Input.is_action_just_released("move_left")):
+		$AnimatedSprite2D.animation="Side"
+		$AnimatedSprite2D.flip_h=true
+	if(Input.is_action_just_released("move_down")):
+		$AnimatedSprite2D.animation="Front"
+	if(Input.is_action_just_released("move_up")):
+		$AnimatedSprite2D.animation="Back"
 
 #funcion que activa el raycast de interaccion en la direccion en la que se mueve
 func rotate_raycast():

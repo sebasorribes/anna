@@ -1,15 +1,18 @@
 extends Interactable
 var contador : int
+var primeraInteraccion
 func _ready():
 	Global.tiene_FlorAzulMotania=false
 	contador=0
+	primeraInteraccion=true
 
 func interact():
-	if(!Global.tiene_FlorAzulMotania):
+	if(primeraInteraccion):
 		var textito
 		textito=[
 			"Petalo de flor azul de montaña. Es un ingrediente fundamental"
 		]
+		primeraInteraccion=false
 		Global.dialog=textito
 		Global.hay_dialogo=true
 		Global.tiene_FlorAzulMotania=true

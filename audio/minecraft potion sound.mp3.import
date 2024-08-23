@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxl2fkpv713he"
+path="res://.godot/imported/minecraft potion sound.mp3-a61d8554efef63a8d80547045022ea78.mp3str"
+
+[deps]
+
+source_file="res://audio/minecraft potion sound.mp3"
+dest_files=["res://.godot/imported/minecraft potion sound.mp3-a61d8554efef63a8d80547045022ea78.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

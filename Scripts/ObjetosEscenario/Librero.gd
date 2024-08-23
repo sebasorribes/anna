@@ -15,11 +15,13 @@ func interact():
 		textito=[
 			"Deberia ir a ver la puerta"
 		]
+		get_parent().get_parent().get_node("llave_location").visible=false
 		Global.dialog=textito
 		Global.hay_dialogo=true
 	else:
-		if(Global.tiene_pocion):
+		if(get_parent().get_parent().get_node("llave_location").visible==true):
 			Global.tiene_llave=true
+			get_parent().get_parent().get_node("llave_location").visible=false
 			toctocSignal.emit()
 			terminado=true
 		else:

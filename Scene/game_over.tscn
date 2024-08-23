@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://duru8k6mfyidl"]
+
+[ext_resource type="Script" path="res://Scripts/gameOver.gd" id="1_kna3g"]
+
+[node name="Game_over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kna3g")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -186.0
+offset_top = 124.0
+offset_right = 181.0
+offset_bottom = 202.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 61
+text = "Te atraparon"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -233.5
+offset_top = -276.0
+offset_right = 233.5
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.14902)
+
+[node name="retry" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.5
+offset_top = -162.5
+offset_right = 112.5
+offset_bottom = -87.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 41
+text = "Reintentar"
+
+[node name="menu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.5
+offset_top = 89.5
+offset_right = 110.5
+offset_bottom = 162.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 41
+text = "Menu"
+
+[connection signal="pressed" from="retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]

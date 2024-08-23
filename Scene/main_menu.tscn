@@ -1,32 +1,66 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfqy4g3mvoo6c"]
+[gd_scene load_steps=6 format=3 uid="uid://cfqy4g3mvoo6c"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_c1c7c"]
 [ext_resource type="Texture2D" uid="uid://c3mpryolcdtrb" path="res://Fondos temporales/FondoProvisional.jpg" id="2_3u1h1"]
+[ext_resource type="FontFile" uid="uid://cfat3mip662vj" path="res://fonts/Witch Magic.otf" id="3_3j3p0"]
+[ext_resource type="FontFile" uid="uid://b0nvju2hm4n1a" path="res://fonts/Gold Lines Trial.otf" id="3_flt85"]
+[ext_resource type="AudioStream" uid="uid://dbh6e0ig443rx" path="res://audio/main_menu.mp3" id="5_qgfr7"]
 
 [node name="MainMenu" type="CanvasLayer"]
 script = ExtResource("1_c1c7c")
 
-[node name="Play" type="Button" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -102.0
-offset_top = 342.0
-offset_right = 155.0
-offset_bottom = 395.0
-grow_horizontal = 2
-text = "Jugar"
-
-[node name="Exit" type="Button" parent="."]
+[node name="main_panel" type="Control" parent="."]
+layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -101.0
-offset_top = 157.0
-offset_right = 154.0
-offset_bottom = 213.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Play" type="Button" parent="main_panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.5
+offset_top = -166.5
+offset_right = 128.5
+offset_bottom = -113.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Jugar"
+
+[node name="Credits" type="Button" parent="main_panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.5
+offset_top = -26.5
+offset_right = 128.5
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Creditos"
+
+[node name="Exit" type="Button" parent="main_panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = 125.0
+offset_right = 127.5
+offset_bottom = 181.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
@@ -34,10 +68,100 @@ text = "Salir"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(963.717, 543.5)
-scale = Vector2(6.42478, 6.47024)
+position = Vector2(814.771, 459.5)
+scale = Vector2(5.43181, 5.47024)
 texture = ExtResource("2_3u1h1")
 metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[node name="ColorRect" type="ColorRect" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.433
+anchor_right = 0.433
+offset_left = -230.9
+offset_top = -77.0
+offset_right = -61.9
+offset_bottom = -49.0
+color = Color(1, 1, 1, 0.384314)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sprite2D/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.418
+anchor_right = 0.418
+offset_left = -68.2778
+offset_top = 2.50601
+offset_right = 101.722
+offset_bottom = 26.506
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0.568627, 0, 0.129412, 1)
+theme_override_fonts/normal_font = ExtResource("3_flt85")
+text = "Ingredientes y engaños"
+
+[node name="Credits_panel" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -247.0
+offset_top = -286.0
+offset_right = 247.0
+offset_bottom = 286.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.647059)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Credits_panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = 7.0
+offset_right = -9.0
+offset_bottom = -71.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_3j3p0")
+theme_override_font_sizes/normal_font_size = 30
+text = "Sonido: Martin Ayup
+
+Diseño: Yohan Loaiza
+
+Arte: Santiago Martin
+
+Programación: Violeta Porcel de Peralta
+
+Programación: Sebastian Sorribes"
+tab_size = 5
+
+[node name="Button" type="Button" parent="Credits_panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -92.5
+offset_top = -78.0
+offset_right = 92.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0.423529, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 50
+text = "Volver"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qgfr7")
+volume_db = -15.0
+
+[connection signal="pressed" from="main_panel/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="main_panel/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="main_panel/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Credits_panel/Button" to="." method="_on_button_pressed"]
